@@ -796,6 +796,7 @@
 
 <body>
     <div class="container-fluid">
+
         <div id="Headingbar">
             <div onclick="home()" id="cart">
                 <p class="buttontext">Home <i class="fas fa-home"></i></p>
@@ -824,96 +825,103 @@
                 <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
             </div>
         </div>
-        <div class="categ2"><button class="btn btn-primary prev" onclick="prev()">Prev</button>
+
+        <div class="categ5">
+            <button class="btn btn-primary prev" onclick="prev()">Prev</button>
             <div class="fash">
-                <p> KPOP AND KDRAMA </p>
-            </div> <button class="btn btn-primary ious" onclick="prev()">Prev</button><button
-                class="btn btn-primary next" onclick="next()">Next</button>
+                <p> Best Seller </p>
+            </div>
+            <button class="btn btn-primary ious" onclick="prev()">Prev</button>
+            <button class="btn btn-primary next" onclick="next()">Next</button>
         </div>
         <div class="items">
             <div class="row">
                 <div class="sell">
-                    <img src="https://oppastore.ph/web/product/big/202111/7c5e7102afaa7ece08ba0c45eeccb11c.png"
-                        class="img-fluid left" alt="item1" style="float:right;">
-                    <div class="label2">
-                        <p>Enhypen Lightstick<br>Php 1000.00</p>
-                        <button class="btn btn-primary" onclick="EnhypenLight()">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="sell">
-                    <img src="https://cdn.kgasa.com/wp-content/uploads/2022/05/minisode-2-Thursdays-Child.jpg"
-                        class="img-fluid right" alt="item2" style="float:right;">
-                    <div class="label2">
-                        <p>TXT Mini-Album<br>Php 1500.00</p>
-                        <button class="btn btn-primary" onclick="TXTAlbum()">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="sell">
-                    <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/16973105/3001825350.jpg"
-                        class="img-fluid left" alt="item1" style="float:right;">
-                    <div class="label2">
-                        <p>Business Proposal<br>Php 100.00</p>
-                        <button class="btn btn-primary" onclick="BusinessProp()">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="sell">
-                    <img src="https://m.media-amazon.com/images/I/414ikXoqP1L._SY580_.jpg" class="img-fluid right"
-                        alt="item2" style="float:right;">
-                    <div class="label2">
-                        <p>BTS - BE Album<br>Php 100.00</p>
-                        <button class="btn btn-primary" onclick="BTSBE()">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="sell">
-                    <img src="https://media.karousell.com/media/photos/products/2020/12/7/startup_stationery_set_officia_1607353463_291aacaf_progressive.jpg"
-                        class="img-fluid left" alt="item1" style="float:right;">
-                    <div class="label2">
-                        <p>Start-Up Merch<br>Php 900.00</p>
-                        <button class="btn btn-primary" onclick="StartUp()">Add to Cart</button>
-                    </div>
-                </div>
-                <div class="sell">
-                    <img src="https://cdn.shopify.com/s/files/1/0095/1746/5647/products/twice-yes-or-yes-same-cotton-hoodie-partypartygo-14161004396611_250x250@2x.jpg?v=1604769343"
-                        class="img-fluid right" alt="item2" style="float:right;">
-                    <div class="label2">
-                        <p>Twice Hoodie<br>Php 2500.00</p>
-                        <button class="btn btn-primary" onclick="TwiceHood()">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <form id="former" action="http://sirjm.infinityfreeapp.com/checkout.php" method="get">
-            <h4>Check Out</h4>
-            <div class="my-3">
-                <label for="txtName" class="form-label">Name</label>
-                <input id="txtName" class="form-control" name="cust_name" type="text" placeholder="e.g. John Smith">
+                    <img src="https://www.farmacia-guerrero.com/image/cache/catalog/productes/B006904-500x500.jpg"
+                        class="img-fluid left" alt="item1">
+                    <div class="label5">
+                        <p>Avyvy ko's Hot<br>Salonpas<br>Php 50.00</p>
+                        <button class="btn btn-primary" onclick="addSalonpas()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://en.goodtimes.my/wp-content/uploads/2017/12/red-banana-500x500.jpg"
+                        class="img-fluid right" alt="item2">
+                    <div class="label5">
+                        <p>Yahyah's Banana<br>Php 500.00</p>
+                        <button class="btn btn-primary" onclick="addBanana()">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <div class="my-3">
-                <label for="txtEmail" class="form-label">Email</label>
-                <input id="txtEmail" class="form-control" name="cust_email" type="email"
-                    placeholder="e.g. jsmith@example.com">
+            <div class="row">
+                <div class="sell">
+                    <img src="https://theoutfit.me/24191-large_default/happy-time-unicorn-glasses.jpg"
+                        class="img-fluid left" alt="item1">
+                    <div class="label5">
+                        <p>Leklek's Unicorn<br>Glasses<br>Php 275.00</p>
+                        <button class="btn btn-primary" onclick="addUnicorn()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://checknt.com/wp-content/uploads/2022/04/lechon-3.png" class="img-fluid right"
+                        alt="item2">
+                    <div class="label5">
+                        <p>Johny Boi's Glazing<br>Hot Lechon<br>Php 8,830.00</p>
+                        <button class="btn btn-primary" onclick="addLechon()">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <div class="my-3">
-                <label for="txtAddress" class="form-label">Address</label>
-                <input id="txtAddress" class="form-control" name="cust_addr" type="text"
-                    placeholder="e.g. Lily Hill, Mabalacat, Pampanga">
+            <div class="row">
+                <div class="sell">
+                    <img src="https://i.pinimg.com/564x/b0/3f/77/b03f771fb355ef0ddddc8656e142ba6d--volleyball-socks-basketball-socks.jpg"
+                        class="img-fluid left" alt="item1">
+                    <div class="label5">
+                        <p>Mesmes' Running<br>Medyas<br>Php 1,750.00</p>
+                        <button class="btn btn-primary" onclick="addMedyas()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://m.media-amazon.com/images/I/613gt-HR+FL.jpg" class="img-fluid right" alt="item2">
+                    <div class="label5">
+                        <p>Pancit Canton<br>Assorted Flavors<br>Php 150.00</p>
+                        <button class="btn btn-primary" onclick="addPancitCanton ()">Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <div class="my-3 form-label">
-                <input id="carlos" class="form-control" name="cust_order" type="text">
+
+            <form id="former" action="http://sirjm.infinityfreeapp.com/checkout.php" method="get">
+                <h4>Check Out</h4>
+                <div class="my-3">
+                    <label for="txtName" class="form-label">Name</label>
+                    <input id="txtName" class="form-control" name="cust_name" type="text" placeholder="e.g. John Smith">
+                </div>
+                <div class="my-3">
+                    <label for="txtEmail" class="form-label">Email</label>
+
+                    <input id="txtEmail" class="form-control" name="cust_email" type="email"
+                        placeholder="e.g. jsmith@example.com">
+                </div>
+                <div class="my-3">
+                    <label for="txtAddress" class="form-label">Address</label>
+                    <input id="txtAddress" class="form-control" name="cust_addr" type="text"
+                        placeholder="e.g. Lily Hill, Mabalacat, Pampanga">
+                </div>
+
+                <div class="my-3 form-label">
+                    <input id="carlos" class="form-control" name="cust_order" type="text">
+                </div>
+                <input type="submit" value="Check Out" onclick="saveCart()" class="btn btn-primary">
+            </form>
+            <h5>My Cart</h5>
+            <hr>
+            <p><b id="price"></b></p>
+            <div id="timeline">
             </div>
-            <input type="submit" value="Check Out" onclick="saveCart()" class="btn btn-primary">
-        </form>
-        <h5>My Cart</h5>
-        <hr>
-        <p><b id="price"></b></p>
-        <div id="timeline">
+
         </div>
     </div>
+
     <script>
         var cust_order = [];
         var d = 0;
@@ -968,48 +976,48 @@
 
         }
 
-        function EnhypenLight() {
-            m = "Enhypen Lightstick";
-            d = 1000;
+        function addSalonpas() {
+            m = "Avyvy ko Hot Salonpas";
+            d = 50;
             addCart();
         }
 
-        function TXTAlbum() {
-            m = "TXT Mini-Album";
+        function addUnicorn() {
+            m = "Leklek Unicorn Glasses";
+            d = 275;
+            addCart();
+        }
+
+        function addMedyas() {
+            m = "Mesmes Runnning Medyas";
+            d = 1750;
+            addCart();
+        }
+
+        function Banana() {
+            m = "Yahyah Banana";
             d = 500;
             addCart();
         }
 
-        function BusinessProp() {
-            m = "Business Proposal";
-            d = 100;
+        function addLechon() {
+            m = "Johny Boi Glazing Hot Lechon";
+            d = 8830;
             addCart();
         }
 
-        function BTSBE() {
-            m = "BTS-BE Album";
-            d = 100;
-            addCart();
-        }
-
-        function StartUp() {
-            m = "Start-Up Merch";
-            d = 900;
-            addCart();
-        }
-
-        function TwiceHood() {
-            m = "Twice Hoodie";
-            d = 2500;
+        function addPancitCanton() {
+            m = "Pancit Canton Assorted Flavors";
+            d = 150;
             addCart();
         }
 
         function prev() {
-            window.location.assign("best-sellers.html")
+            window.location.assign("school-materials.html")
         }
 
         function next() {
-            window.location.assign("anime-manga.html")
+            window.location.assign("kpop.html")
         }
 
         function home() {
@@ -1020,6 +1028,7 @@
             window.location.assign("Company-page.html")
         }
     </script>
+
 </body>
 
 </html>
