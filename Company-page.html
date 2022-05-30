@@ -50,7 +50,7 @@
             vertical-align: middle;
         }
 
-        .container-fluid{
+        .container-fluid {
             width: 100%;
             padding: 0%;
         }
@@ -82,7 +82,7 @@
 
         /* Position the "next button" to the right */
         .next {
-            left: 560px;
+            left: 20%;
 
             border-radius: 3px 0 0 3px;
         }
@@ -148,7 +148,7 @@
         }
 
         .center {
-            width: 1000px;
+            width: auto;
             margin-left: auto;
             margin-right: auto;
 
@@ -307,6 +307,10 @@
             font-size: 30px;
         }
 
+        .Name {
+            font-size: 30px;
+        }
+
 
         #Searchbutton {
             float: right;
@@ -316,6 +320,10 @@
             height: 50px;
             border: 2px solid black;
             font-size: 30px;
+        }
+
+        .Refere {
+            font-size: 10px;
         }
 
         @media screen and (max-width: 1329px) {
@@ -351,7 +359,7 @@
 
             .slideshow-container,
             h1 {
-                margin-left: 200px;
+                margin-left: 0px;
             }
         }
 
@@ -362,7 +370,7 @@
             }
         }
 
-        @media screen and (max-width: 721px) {
+        @media screen and (max-width: 803px) {
 
             #titlecontent {
                 width: 300px;
@@ -388,6 +396,10 @@
 
             #cart {
                 width: 170px;
+            }
+
+            .next{
+                left: 80%;
             }
 
         }
@@ -517,6 +529,7 @@
             .prev {
                 font-size: 11px;
             }
+
             .next {
                 font-size: 11px;
                 left: 300px;
@@ -529,20 +542,20 @@
             }
 
             .slideshow-container {
-            width: 360px;
-            position: relative;
-            margin: auto;
-        }
-        
+                width: 320px;
+                position: relative;
+                margin: auto;
+            }
+
             .center {
-            width: 330px;
-            margin-left: auto;
-            margin-right: auto;
+                width: 330px;
+                margin-left: auto;
+                margin-right: auto;
 
-        }
+            }
 
 
-            
+
         }
     </style>
 </head>
@@ -550,34 +563,34 @@
 <body>
     <div class="container-fluid">
 
-            <div id="Headingbar">
-                <div onclick="home()" id="cart">
-                    <p class="buttontext">Home <i class="fas fa-home"></i></p>
-                    <p><i class="fas fa-home mediaquer carty"></i></p>
-                </div>
-                <div onclick="comp()" id="company">
-                    <p id="comp" class="buttontext">About the Company <i class="fas fa-city"></i></p>
-                    <p><i class="fas fa-city mediaquer"></i></p>
-    
-                </div>
-                <button id="Searchbutton"><i class="fas fa-search"></i></button>
-                <form>
-                    <input id="search" type="text" placeholder="Search..">
-                </form>
-    
-    
+        <div id="Headingbar">
+            <div onclick="home()" id="cart">
+                <p class="buttontext">Home <i class="fas fa-home"></i></p>
+                <p><i class="fas fa-home mediaquer carty"></i></p>
             </div>
+            <div onclick="comp()" id="company">
+                <p id="comp" class="buttontext">About the Company <i class="fas fa-city"></i></p>
+                <p><i class="fas fa-city mediaquer"></i></p>
 
-            <div id="Titlebar">
-                <img id="logo" src="https://i.imgur.com/MUKANCI.png" width="125" height="125" alt="Los Angeles">
-                <h2>THE TREND</h2>
-                <div id="titlecontent">
-                    <h1>THE TREND</h1>
-                </div>
-                <div id="Advertisement">
-                    <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
-                </div>
             </div>
+            <button id="Searchbutton"><i class="fas fa-search"></i></button>
+            <form>
+                <input id="search" type="text" placeholder="Search..">
+            </form>
+
+
+        </div>
+
+        <div id="Titlebar">
+            <img id="logo" src="https://i.imgur.com/MUKANCI.png" width="125" height="125" alt="Los Angeles">
+            <h2>THE TREND</h2>
+            <div id="titlecontent">
+                <h1>THE TREND</h1>
+            </div>
+            <div id="Advertisement">
+                <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
+            </div>
+        </div>
 
 
 
@@ -595,13 +608,13 @@
             <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
                 <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/279003083_369202948360938_8349862340715488514_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF-648RiAt8mm0gzcloUo5Gc1nbpNGObddzWduk0Y5t1whPLsx_jrbAQa1f3eLfyFoZIHC4BFe7zpMdy7ah6uW3&_nc_ohc=A4FDHY-DNUoAX9Nikuw&_nc_ht=scontent.fmnl17-5.fna&oh=03_AVLDxaLTlwdXFVNk2CIdf0gn6kL4JsLQAQn47lQBoUIeog&oe=62B5767E"
-                    alt=" " style="width:600px; height: 500px;"  class="img-fluid">
+                    alt=" " style="width:600px; height: 500px;" class="img-fluid">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
                 <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/280439027_306462238347506_323155464050256062_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE7wnvuGDS_r5EWedQepZPXscn8yI9gMtKxyfzIj2Ay0hOh3foJpVUWjlbSATThjqrLzQdoK_EO0pdKQpz2ebaH&_nc_ohc=sjdQOOg7PpQAX8jTqXB&_nc_ht=scontent.fmnl17-1.fna&oh=03_AVJXtKcK0bT5ERtYJBJYoNfA2VToF9qU9CfyLz7dzZDHsw&oe=62B55F84"
-                    alt=" " style="width:600px; height: 500px;"  class="img-fluid">
+                    alt=" " style="width:600px; height: 500px;" class="img-fluid">
             </div>
 
             <div class="mySlides">
@@ -636,7 +649,7 @@
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-  
+
 
         <div class="center">
             <img src="https://lh3.googleusercontent.com/IF9n43zk_5LITwVERopfIpr977NSeabV2mbl2URsvfOaPkh1b1UXH4sFOC1fvkBNmPzNc2Nsl85CrPbmF-1RnF_1t5YiM9eFz4Vve-A4JPY8WXujQ_NbcTiyqsgQV6oPhGjsFjqDZ-4=w2400"
@@ -657,7 +670,83 @@
             <img src="https://lh3.googleusercontent.com/NZFAxL9nDa6U-zyvzG3sIQ_j6jn4u9IZqfr59AJAk_mX4jIKypdk3MlqbxYgI7BadMpwr_MUAzjcf6cMYAWyF6ZhQSa8mwc1LyOpc7Tpa3J73-q5RJC7dShQKOzjUiv70YHtgLp4lds=w2400"
                 alt="applicants" class="img-fluid" style="margin-bottom: 30px;">
 
+            <div class="List">
+                <div class="Peanut">
+                    <hr>
+                    <br>
+                    <p class="Name">Avy Laniojan</p>
+                    <br>
+                    <p>Company Page (HTML, CSS)</p>
+                    <p>Logo Design</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="Peanut">
+                    <p class="Name">James Macaspac</p>
+                    <br>
+                    <br>
+                    <p>Homepage (HTML, Javascript, CSS)</p>
+                    <p>Category Pages (Javascript)</p>
+                    <p>Company Page (Javascript)</p>
+                    <p>Main Javacript Branching and Network (Cart functionality)</p>
+                    <p>Logo Design</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="Peanut">
+                    <p class="Name">JV Diwa</p>
+                    <br>
+                    <p>Category Pages (HTML, CSS)</p>
+                    <p>Logo Design</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="Peanut">
+                    <p class="Name">Lexie Buencamino</p>
+                    <br>
+                    <p>Category Pages (HTML, CSS)</p>
+                    <p>Logo Design</p>
+                    <p>Elements and Custom Graphics Design</p>
+                    <hr>
+                    <br>
+                </div>
+                <div class="Peanut">
+                    <p class="Name">Nyah Salazar</p>
+                    <br>
+                    <p> Main Creator of Category Pages (HTML, CSS)</p>
+                    <p>Logo Design</p>
+                    <p>Company Page (CSS)</p>
+                    <p>Page Responsiveness</p>
+                    <hr>
+                    <br>
+                </div>
+            </div>
+            <div class="List Refere">
+                <p class="Name">References</p>
+                <p><a href="http://ukiyaseed.weebly.com/uploads/5/8/8/7/58878313/7683637_orig.jpg">Assassination Classroom</a></p>
+                <p><a href="https://i.pinimg.com/originals/e8/06/df/e806dfbd2df98640d64ec652f35961ca.jpg">Tower Of God</a></p>
+                <p><a href="https://preview.redd.it/issx973k44n81.jpg?width=640&crop=smart&auto=webp&s=e27973d4268ff23f664bf230a06e355b99631043">Spy X Family</a></p>
+                <p><a href="https://i.ebayimg.com/images/g/44QAAOSwEAthTyEJ/s-l400.jpg">Tokyo Revengers</a></p>
+                <p><a href="https://preview.redd.it/tmp5llw33i061.jpg?auto=webp&s=51c184f91cb2b0315a4a3d0d96e00a695d54ec2e">Dr Stone</a></p>
+                <p><a href="https://new.boredteachers.com/wp-content/uploads/2021/06/514jzLDE-zL._AC_SL1000_.jpg">Sharpener</a></p>
+                <p><a href="https://media.kohlsimg.com/is/image/kohls/4460124?wid=600&hei=600&op_sharpen=1">Eraser</a></p>
+                <p><a href="https://i5.walmartimages.com/asr/a9dc8a8a-c3bf-409e-9f21-c26d084541a0_1.c13c7d778d1a5fa43e776d70922b43be.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">Sharpener 2</a></p>
+                <p><a href="https://images.vat19.com/fart-fighters/fart-fighters-styles.jpg"></a>Ballpen</p>
+                <p><a href="http://img.ltwebstatic.com/images3_pi/2021/08/16/16290859057571b28429cdf4d8764805efd1e134b7_thumbnail_405x552.jpg"></a>Tank Top</p>
+                <p><a href="https://img.ltwebstatic.com/images3_pi/2021/11/25/1637833390c2a82e203e962f4344ff7c7288944dde.webp"></a>Bag</p>
+                <p><a href="https://i.pinimg.com/originals/3a/4b/c5/3a4bc57f6b378bc51a64d68cbe2f900a.jpg"></a>Shoes</p>
+                <p><a href="https://img.ltwebstatic.com/images3_pi/2022/04/20/1650432880db2ebd39a9fd2e75a94bd902e901ed72.jpg"></a>Necklace</p>
+                <p><a href="https://www.ubuy.com/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFMVFpBK21WMEwuX0FDX1VMMTUwMF8uanBn.jpg"></a>Dress</p>
+                <p><a href="https://i.pinimg.com/564x/79/aa/fb/79aafb2823742f7dc4bfdc52d149e7a5.jpg"></a>Sleeves</p>
+                <p><a href="https://www.farmacia-guerrero.com/image/cache/catalog/productes/B006904-500x500.jpg"></a>Salon</p>
+                <p><a href="https://en.goodtimes.my/wp-content/uploads/2017/12/red-banana-500x500.jpg"></a>Banana</p>
+                <p><a href="https://theoutfit.me/24191-large_default/happy-time-unicorn-glasses.jpg"></a>Unicorn</p>
+                <p><a href="https://checknt.com/wp-content/uploads/2022/04/lechon-3.png"></a>Lechon</p>
+                <p><a href="https://i.pinimg.com/564x/b0/3f/77/b03f771fb355ef0ddddc8656e142ba6d--volleyball-socks-basketball-socks.jpg">Socks</a></p>
+            </div>
         </div>
+
+    </div>
     </div>
     <script>
         let slideIndex = 1;
