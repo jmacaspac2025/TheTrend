@@ -419,6 +419,10 @@
             font-size: 30px;
         }
 
+        #price {
+            margin-left: 15px;
+        }
+
 
         #Searchbutton {
             float: right;
@@ -901,8 +905,8 @@
         </form>
         <h5>My Cart</h5>
         <hr>
+        <p><b id="price"></b></p>
         <div id="timeline">
-
         </div>
     </div>
 
@@ -910,6 +914,7 @@
         var cust_order = [];
         var d = 0;
         var m = "";
+        var y = 0;
 
         if (localStorage.getItem('cust_order') == null) {
 
@@ -920,9 +925,17 @@
 
 
         function displayCart() {
+            y = 0;
             document.getElementById('timeline').innerHTML = "";
             for (var i = 0; i < cust_order.length; i++) {
-                document.getElementById('timeline').innerHTML += '<div class="post"><h5>' + cust_order[i].prod_name + '</h5><button class="btn btn-sm btn-outline-danger" onclick="removeAt(' + i + ')">Delete</button></div>';
+                document.getElementById('timeline').innerHTML += '<div class="post"><p>' + cust_order[i].prod_name + '</p> <p>PHP ' + cust_order[i].prod_price + '</p><button class="btn btn-sm btn-outline-danger" onclick="removeAt(' + i + ')">Delete</button></div>';
+
+                y = y + cust_order[i].prod_price;
+                document.getElementById('price').innerHTML = 'Total Price: PHP ' + y;
+            }
+
+            if (document.getElementById('timeline').innerHTML == "") {
+                document.getElementById('price').innerHTML = 'Total Price: PHP 0';
             }
         }
         displayCart();
@@ -930,16 +943,15 @@
         function addCart() {
             var p = { prod_name: m, prod_price: d };
             cust_order.push(p);
-            displayCart();
             saveCart();
+            displayCart();
         }
 
         function removeAt(i) {
             cust_order.splice(i, 1);
-
-
-            displayCart();
             localStorage.setItem('cust_order', JSON.stringify(cust_order));
+            displayCart();
+
         }
 
         function saveCart() {
