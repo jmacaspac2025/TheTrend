@@ -50,6 +50,11 @@
             vertical-align: middle;
         }
 
+        .container-fluid{
+            width: 100%;
+            padding: 0%;
+        }
+
         /* Slideshow container */
         .slideshow-container {
             max-width: 600px;
@@ -509,23 +514,41 @@
 
         @media only screen and (max-width: 360px) {
 
-            .prev,
+            .prev {
+                font-size: 11px;
+            }
             .next {
-                font-size: 11px
+                font-size: 11px;
+                left: 300px;
             }
 
             .slideshow-container,
             h1 {
-                margin-left: 50%;
+                margin-left: 10%;
                 font-size: 30px;
             }
+
+            .slideshow-container {
+            width: 360px;
+            position: relative;
+            margin: auto;
+        }
+        
+            .center {
+            width: 330px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+
+            
         }
     </style>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
 
             <div id="Headingbar">
                 <div onclick="home()" id="cart">
@@ -555,47 +578,48 @@
                     <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
                 </div>
             </div>
-        </div>
+
+
 
         <h1>TITAN SLAYERS</h1>
 
         <div class="slideshow-container">
 
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
                 <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/280024507_4573950672706787_1821914481416312161_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHace9ud14Meqb-lUol-Rx2YV9Py2ieBV5hX0_LaJ4FXrMyLlE9H1YT-WXoaAgQkfafkuKpMkus7h28VXuMuO8i&_nc_ohc=8viWcUPjAnsAX-L3U7r&_nc_ht=scontent.fmnl17-5.fna&oh=03_AVKMOppf5HFIMUUgsYOtLQoMgdHMYWar-AGnge45C-ttsg&oe=62B45B26"
-                    alt=" " style="width:600px; height: 500px;">
+                    alt=" " style="width:600px; height: 500px;" class="img-fluid">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
                 <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/279003083_369202948360938_8349862340715488514_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF-648RiAt8mm0gzcloUo5Gc1nbpNGObddzWduk0Y5t1whPLsx_jrbAQa1f3eLfyFoZIHC4BFe7zpMdy7ah6uW3&_nc_ohc=A4FDHY-DNUoAX9Nikuw&_nc_ht=scontent.fmnl17-5.fna&oh=03_AVLDxaLTlwdXFVNk2CIdf0gn6kL4JsLQAQn47lQBoUIeog&oe=62B5767E"
-                    alt=" " style="width:600px; height: 500px;">
+                    alt=" " style="width:600px; height: 500px;"  class="img-fluid">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
                 <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/280439027_306462238347506_323155464050256062_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE7wnvuGDS_r5EWedQepZPXscn8yI9gMtKxyfzIj2Ay0hOh3foJpVUWjlbSATThjqrLzQdoK_EO0pdKQpz2ebaH&_nc_ohc=sjdQOOg7PpQAX8jTqXB&_nc_ht=scontent.fmnl17-1.fna&oh=03_AVJXtKcK0bT5ERtYJBJYoNfA2VToF9qU9CfyLz7dzZDHsw&oe=62B55F84"
-                    alt=" " style="width:600px; height: 500px;">
+                    alt=" " style="width:600px; height: 500px;"  class="img-fluid">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
                 <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/279918767_538899047801903_3702047403084764684_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeH7SBk6NmJRxSLDAmFWlg2EvrSpfRzzYyK-tKl9HPNjIu_rr51elOAesg0UaM3MVBf9kqE61ar9gGy_IOswVmwL&_nc_ohc=3bwYdEHAWwEAX_nSc5J&_nc_ht=scontent.fmnl17-4.fna&oh=03_AVLEtCoeD7v5E9guTX64gc4GDWsTRL2MbeX92ORTcDgMjQ&oe=62B58E95"
-                    alt=" " style="width:600px; height: 500px;">
+                    alt=" " style="width:600px; height: 500px;" class="img-fluid">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
                 <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/279967901_424180876376557_1846100439172228786_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGUfeE9dXyBvriFSOQRTyx4m7-A27APDI-bv4DbsA8Mj21uwUr-vtGdxDgcp9CwWcq8v8pBbCWt3tld0zhmKRkH&_nc_ohc=aGbKFmQhk1kAX_iNlUh&_nc_ht=scontent.fmnl17-3.fna&oh=03_AVLYo7K_cf9NGOTjYCxtIyES8vRpexZkoAFtv8_Vv8RNGQ&oe=62B1F890"
-                    alt=" " style="width:600px; height: 500px;">
+                    alt=" " style="width:600px; height: 500px;" class="img-fluid">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
                 <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/279851403_1619599735084312_7333387451325961977_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGb3PBJTInyz1ekt1YXonPiWLV0-4K4UdFYtXT7grhR0blK-yXMwZWIarTZYtsfGd8CQbN6VK4ilm9AbH_dTp3x&_nc_ohc=ywRqSaZPc3YAX-kjjK-&_nc_ht=scontent.fmnl17-2.fna&oh=03_AVINy_Uimbm8AwiKF2Y_LlZtlXYGMODZt8MMFmowlLHHCw&oe=62B24AD4"
-                    alt=" " style="width:600px; height: 500px;">
+                    alt=" " style="width:600px; height: 500px;" class="img-fluid">
             </div>
 
             <a style="color: black;" class="prev" onclick="plusSlides(-1)">❮</a>
@@ -612,31 +636,29 @@
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-
+  
 
         <div class="center">
             <img src="https://lh3.googleusercontent.com/IF9n43zk_5LITwVERopfIpr977NSeabV2mbl2URsvfOaPkh1b1UXH4sFOC1fvkBNmPzNc2Nsl85CrPbmF-1RnF_1t5YiM9eFz4Vve-A4JPY8WXujQ_NbcTiyqsgQV6oPhGjsFjqDZ-4=w2400"
-                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+                alt="applicants" class="img-fluid" style="margin-bottom: 30px;">
 
             <img src="https://lh3.googleusercontent.com/sbNb5GuFL59C5ojrNPpJDTJcR8zJ-ell9WX0Yfr17olDGahW02oxy6dHSM1SCWB36zCBZ_SUyMx6_Q3prswU8k3B8xkGl9GBWKDNi5I4T6xzNEALm7g5RMepS8Pqr0NftUDd0OjmaMM=w2400"
-                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+                alt="applicants" class="img-fluid" style="margin-bottom: 30px;">
 
             <img src="https://lh3.googleusercontent.com/WeBVRNamRTEJSsYYqW65b2aPcvq3qcmn1NuLKX3Iu32K7V9LMl6F7GHNvzy3XoZbyLDmYILIH_Y350OUzMTLxXFZQd1Hxy__lKNAQ07KuidKP-bnwFgvn3dz_yXPe879VFUFNVZomUY=w2400"
-                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+                alt="applicants" class="img-fluid" style="margin-bottom: 30px;">
 
             <img src="https://lh3.googleusercontent.com/Q86IrfISaJ0mpS0cw-NEBnb41hg5ILyHeLYGWU0fMyUpUEgEmwxi1pBGCVYFhUeBmbmodGSRDYUtPJIGbmMQmueZ6Ip4JxhGXhEL62-JMm27aO5jqICr8SvuVUc6S0VPINNA3bv_0kg=w2400"
-                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+                alt="applicants" class="img-fluid" style="margin-bottom: 30px;">
 
             <img src="https://lh3.googleusercontent.com/9dCt0Hw232bYYe87RruJoSML7lzSk2-wDbkV4xwJyzxCJPGv9Q12KBq4-M1f07AxFWs8QkS2WhPt6JNF9aixDEHGZiMRvICSGlkNeNAHCbARVrMAhceDoQmnwnh2P9yrgmHfiTH0EQc=w2400"
-                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+                alt="applicants" class="img-fluid" style="margin-bottom: 30px;">
 
             <img src="https://lh3.googleusercontent.com/NZFAxL9nDa6U-zyvzG3sIQ_j6jn4u9IZqfr59AJAk_mX4jIKypdk3MlqbxYgI7BadMpwr_MUAzjcf6cMYAWyF6ZhQSa8mwc1LyOpc7Tpa3J73-q5RJC7dShQKOzjUiv70YHtgLp4lds=w2400"
-                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+                alt="applicants" class="img-fluid" style="margin-bottom: 30px;">
 
         </div>
     </div>
-
-
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
