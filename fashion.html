@@ -2,11 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Fashion</title>
+    <title>School-Materials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Mali&family=Patrick+Hand&family=Sriracha&family=Tapestry&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -16,11 +22,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Mali&family=Patrick+Hand&family=Sriracha&family=Tapestry&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -39,15 +40,11 @@
 
     <style>
         body {
-            background-color: #D6E5FA;
+            background-color: #fff9e5;
         }
 
         #former {
             font-family: 'Sriracha', cursive;
-        }
-
-        #carlos {
-            display: none;
         }
 
         .categ1 {
@@ -75,26 +72,26 @@
             text-align: center;
             background-color: #F9ECEC;
             font-size: 75px;
+            margin-top: 20px;
             margin-bottom: 0px;
             border-bottom: solid;
             border-top: solid;
             font-family: 'Major Mono Display', cursive;
         }
 
-        .btn {
-            background-color: #F9ECEC;
-            border-color: #F9ECEC;
-            color: black;
-        }
-
         .categ4 {
             text-align: center;
-            background-color: #fff5d3;
-            font-size: 75px;
+            background-color: #92BA92;
+            font-size: 50px;
             margin-bottom: 0px;
             border-bottom: solid;
             border-top: solid;
-            font-family: 'Patrick Hand', cursive;
+            font-family: 'Sriracha', cursive;
+        }
+
+        .btn {
+            background-color: #92BA92;
+            border-color: #92BA92;
         }
 
         .categ5 {
@@ -188,11 +185,6 @@
             font-size: 32px;
         }
 
-        .container-fluid {
-            padding-left: 0%;
-            padding-right: 0%;
-        }
-
         #stone {
             margin-top: 50px;
         }
@@ -227,18 +219,45 @@
             border-left-color: #11832d;
         }
 
+        #carlos {
+            display: none;
+        }
+
+        .post {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e9ecef;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+            border-left-color: #11832d;
+        }
+
+        .post {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e9ecef;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+            border-left-color: #11832d;
+        }
+
         .prev {
-            background-color: #D6E5FA;
+            background-color: #fff9e5;
             display: inline-block;
+            color: black;
         }
 
         .next {
-            background-color: #D6E5FA;
+            background-color: #fff9e5;
+            color: black;
         }
 
         .ious {
-            background-color: #D6E5FA;
+            background-color: #fff9e5;
             display: none;
+            color: black;
         }
 
         .fash {
@@ -400,6 +419,10 @@
             font-size: 30px;
         }
 
+        #price {
+            margin-left: 15px;
+        }
+
 
         #Searchbutton {
             float: right;
@@ -409,6 +432,11 @@
             height: 50px;
             border: 2px solid black;
             font-size: 30px;
+        }
+
+        .container-fluid {
+            padding-left: 0%;
+            padding-right: 0%;
         }
 
         #former {
@@ -448,21 +476,23 @@
 
         }
 
+
+
         @media only screen and (max-width: 1180px) {
             .prev {
-                background-color: #D6E5FA;
+                background-color: #fff9e5;
                 display: none;
             }
 
             .ious {
-                background-color: #D6E5FA;
+                background-color: #fff9e5;
                 display: inline-block;
                 margin-right: 5px;
                 margin-left: 5px;
             }
 
             .next {
-                background-color: #D6E5FA;
+                background-color: #fff9e5;
                 margin-left: 5px;
             }
 
@@ -478,10 +508,29 @@
 
         }
 
+        @media screen and (max-width: 1119px) {
+
+            #Advertisement {
+                display: none;
+            }
+
+
+        }
+
+
+        @media screen and (max-width: 768px) {
+
+            #search {
+                width: 150px;
+            }
+        }
+
+
         @media screen and (max-width: 721px) {
 
             #titlecontent {
                 width: 300px;
+                display: none;
             }
 
             #Titlebar h1 {
@@ -506,22 +555,10 @@
                 width: 170px;
             }
 
-
-
-        }
-
-        @media screen and (max-width: 768px) {
-
-            #search {
-                width: 150px;
+            .categ4 p {
+                text-align: center;
             }
-        }
 
-        @media screen and (max-width: 1105px) {
-
-            #Advertisement {
-                display: none;
-            }
 
 
         }
@@ -645,6 +682,7 @@
             }
         }
 
+
         @media only screen and (max-width: 360px) {
             .items {
                 background-color: #fff9e5;
@@ -661,19 +699,10 @@
                 margin-left: 10%;
             }
 
-            .categ3 {
+            .categ4 p {
                 text-align: center;
-                background-color: #F9ECEC;
-                font-size: 50px;
-                margin-bottom: 0px;
-                border-bottom: solid;
-                border-top: solid;
-                font-family: 'Major Mono Display', cursive;
-            }
-
-            .container-fluid {
-                padding-left: 0%;
-                padding-right: 0%;
+                width: 200px;
+                ;
             }
 
             .img-fluid {
@@ -712,7 +741,7 @@
             .label3 p {
                 font-size: 17px;
                 margin-left: 17%;
-                text-align: center;
+                text-align: left;
             }
 
             .btn {
@@ -724,19 +753,19 @@
             }
 
             .prev {
-                background-color: #D6E5FA;
+                background-color: #fff9e5;
                 display: none;
             }
 
             .ious {
-                background-color: #D6E5FA;
+                background-color: #fff9e5;
                 display: inline-block;
                 margin-right: 5px;
                 margin-left: 5px;
             }
 
             .next {
-                background-color: #D6E5FA;
+                background-color: #fff9e5;
                 margin-left: 5px;
             }
 
@@ -755,6 +784,8 @@
 
 <body>
     <div class="container-fluid">
+
+
         <div id="Headingbar">
             <div onclick="home()" id="cart">
                 <p class="buttontext">Home <i class="fas fa-home"></i></p>
@@ -772,6 +803,7 @@
 
 
         </div>
+
         <div id="Titlebar">
             <img id="logo" src="https://i.imgur.com/MUKANCI.png" width="125" height="125" alt="Los Angeles">
             <h2>THE TREND</h2>
@@ -782,76 +814,70 @@
                 <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
             </div>
         </div>
-        <div class="categ3"><button class="btn btn-primary prev" onclick="prev()">Prev</button>
+
+        <div class="categ4">
+            <button class="btn btn-primary prev" onclick="prev()">Prev</button>
             <div class="fash">
-                <p> Fashion </p>
-            </div> <button class="btn btn-primary ious" onclick="prev()">Prev</button><button
-                class="btn btn-primary next" onclick="next()">Next</button>
+                <p> School Materials </p>
+            </div>
+            <button class="btn btn-primary ious" onclick="prev()">Prev</button>
+            <button class="btn btn-primary next" onclick="next()">Next</button>
         </div>
-        <div class="items" style="background-color: #D6E5FA;">
+        <div class="items">
             <div class="row">
                 <div class="sell">
-                    <img src="http://img.ltwebstatic.com/images3_pi/2021/08/16/16290859057571b28429cdf4d8764805efd1e134b7_thumbnail_405x552.jpg"
-                        class="img-fluid left" alt="item1">
-                    <div class="label3" style="margin-right: 11%; margin-top: 18%;">
-                        <p> argyle Print <br> Tank Top </p>
-                        <p>php 250.00</p>
-                        <button class="btn btn-primary" onclick="tanktop()">add to Cart</button>
+                    <img src="https://new.boredteachers.com/wp-content/uploads/2021/06/514jzLDE-zL._AC_SL1000_.jpg"
+                        class="img-fluid left" alt="item1" style="float:right;">
+                    <div class="label4">
+                        <p>Nose Sharpener<br>Php 100.00</p>
+                        <button class="btn btn-primary" onclick="nose()">Add to Cart</button>
                     </div>
                 </div>
                 <div class="sell">
-                    <img src="https://img.ltwebstatic.com/images3_pi/2021/11/25/1637833390c2a82e203e962f4344ff7c7288944dde.webp"
-                        class="img-fluid right" alt="item2">
-                    <div class="label3" style="margin-right: 13%; margin-top: 18%;">
-                        <p>Minimalist <br> ruched Bag</p>
-                        <p>php 200.00</p>
-                        <button class="btn btn-primary" onclick="bag()">add to Cart</button>
+                    <img src="https://media.kohlsimg.com/is/image/kohls/4460124?wid=600&hei=600&op_sharpen=1"
+                        class="img-fluid right" alt="item2" style="float:right;">
+                    <div class="label4">
+                        <p>Poop Eraser<br>Php 100.00</p>
+                        <button class="btn btn-primary" onclick="pooper()">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="sell">
-                    <img src="https://i.pinimg.com/originals/3a/4b/c5/3a4bc57f6b378bc51a64d68cbe2f900a.jpg"
-                        class="img-fluid left" alt="item1">
-                    <div class="label3" style="margin-right: 9%; margin-top: 13%;">
-                        <p>Back zipper <br> Chunky heeled <br> Classic Boots </p>
-                        <p>php 980.00</p>
-                        <button class="btn btn-primary" onclick="boots()">add to Cart</button>
+                    <img src="https://i5.walmartimages.com/asr/a9dc8a8a-c3bf-409e-9f21-c26d084541a0_1.c13c7d778d1a5fa43e776d70922b43be.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+                        class="img-fluid left" alt="item1" style="float:right;">
+                    <div class="label4">
+                        <p>Toilet Sharpener<br>Php 100.00</p>
+                        <button class="btn btn-primary" onclick="toilet()">Add to Cart</button>
                     </div>
                 </div>
                 <div class="sell">
-                    <img src="https://img.ltwebstatic.com/images3_pi/2022/04/20/1650432880db2ebd39a9fd2e75a94bd902e901ed72.jpg"
-                        class="img-fluid right" alt="item2">
-                    <div class="label3" style="margin-right: 5%; margin-top: 15%;">
-                        <p>3 Pieces<br> Faux Pearl <br> Decor necklace</p>
-                        <p>php 50.00</p>
-                        <button class="btn btn-primary" onclick="necklace()">add to Cart</button>
+                    <img src="https://ctl.s6img.com/society6/img/LsJNAZ39fh5tRWKeM2QZwB-QUGQ/w_700/backpacks/standard/front/~artwork,fw_3900,fh_4574,fx_-338,iw_4575,ih_4575/s6-original-art-uploads/society6/uploads/misc/8a32de270f1b4ca8be6b7859ea397e6a/~~/invasion-of-the-booger-snatchers-20-backpacks.jpg"
+                        class="img-fluid right" alt="item2" style="float:right;">
+                    <div class="label4">
+                        <p>Booger Backpack<br>Php 100.00</p>
+                        <button class="btn btn-primary" onclick="booger()">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="sell">
-                    <img src="https://www.ubuy.com/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFMVFpBK21WMEwuX0FDX1VMMTUwMF8uanBn.jpg"
-                        class="img-fluid left" alt="item1">
-                    <div class="label3" style="margin-right: 6%; margin-top: 10%;">
-                        <p>Square neck <br> ruffle Dress</p>
-                        <p>php 280.00 each</p>
-                        <button class="btn btn-primary" onclick="dress()">add to Cart</button>
+                    <img src="https://images.vat19.com/fart-fighters/fart-fighters-styles.jpg" class="img-fluid left"
+                        alt="item1" style="float:right;">
+                    <div class="label4">
+                        <p>Poop Ballpen<br>Php 100.00</p>
+                        <button class="btn btn-primary" onclick="poopbp()">Add to Cart</button>
                     </div>
                 </div>
                 <div class="sell">
-                    <img src="https://i.pinimg.com/564x/79/aa/fb/79aafb2823742f7dc4bfdc52d149e7a5.jpg"
-                        class="img-fluid right" alt="item2">
-                    <div class="label3" style="margin-right: 6%; margin-top: 10%;">
-                        <p> Collared Long <br> Sleeves Top</p>
-                        <p>php 230.00 each</p>
-                        <button class="btn btn-primary" onclick="sleeves()">add to Cart</button>
+                    <img src="https://ae01.alicdn.com/kf/HTB1MSGZOwTqK1RjSZPhq6xfOFXak/1-Pcs-Cute-Korean-Kawaii-Fart-Pectin-School-Pencil-Cases-Stationery-Pencilcase-Kawaii-Bag-Pencil-Case.jpg_Q90.jpg_.webp"
+                        class="img-fluid right" alt="item2" style="float:right;">
+                    <div class="label4">
+                        <p>Fart Pencil Case<br>Php 100.00</p>
+                        <button class="btn btn-primary" onclick="fart()">Add to Cart</button>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
 
         <form id="former" action="http://sirjm.infinityfreeapp.com/checkout.php" method="get">
@@ -879,16 +905,16 @@
         </form>
         <h5>My Cart</h5>
         <hr>
+        <p><b id="price"></b></p>
         <div id="timeline">
-
         </div>
-
     </div>
 
     <script>
         var cust_order = [];
         var d = 0;
         var m = "";
+        var y = 0;
 
         if (localStorage.getItem('cust_order') == null) {
 
@@ -899,9 +925,17 @@
 
 
         function displayCart() {
+            y = 0;
             document.getElementById('timeline').innerHTML = "";
             for (var i = 0; i < cust_order.length; i++) {
-                document.getElementById('timeline').innerHTML += '<div class="post"><h5>' + cust_order[i].prod_name + '</h5><button class="btn btn-sm btn-outline-danger" onclick="removeAt(' + i + ')">Delete</button></div>';
+                document.getElementById('timeline').innerHTML += '<div class="post"><p>' + cust_order[i].prod_name + '</p> <p>PHP ' + cust_order[i].prod_price + '</p><button class="btn btn-sm btn-outline-danger" onclick="removeAt(' + i + ')">Delete</button></div>';
+
+                y = y + cust_order[i].prod_price;
+                document.getElementById('price').innerHTML = 'Total Price: PHP ' + y;
+            }
+
+            if (document.getElementById('timeline').innerHTML == "") {
+                document.getElementById('price').innerHTML = 'Total Price: PHP 0';
             }
         }
         displayCart();
@@ -909,16 +943,15 @@
         function addCart() {
             var p = { prod_name: m, prod_price: d };
             cust_order.push(p);
-            displayCart();
             saveCart();
+            displayCart();
         }
 
         function removeAt(i) {
             cust_order.splice(i, 1);
-
-
-            displayCart();
             localStorage.setItem('cust_order', JSON.stringify(cust_order));
+            displayCart();
+
         }
 
         function saveCart() {
@@ -931,48 +964,48 @@
 
         }
 
-        function tanktop() {
-            m = "Argyle Print Tank Top";
-            d = 250;
+        function nose() {
+            m = "Nose Sharpener";
+            d = 100;
             addCart();
         }
 
-        function bag() {
-            m = "Minimalist Ruched Bag";
-            d = 200;
+        function toilet() {
+            m = "Toilet Sharpener";
+            d = 100;
             addCart();
         }
 
-        function boots() {
-            m = "Back Zipper Chunky Heeled Classic Boots";
-            d = 980;
+        function poopbp() {
+            m = "Poop Ballpen";
+            d = 100;
             addCart();
         }
 
-        function necklace() {
-            m = "3pcs Faux Pearl Decor Necklace";
-            d = 50;
+        function pooper() {
+            m = "Poop Eraser";
+            d = 100;
             addCart();
         }
 
-        function dress() {
-            m = "Square Neck Ruffle Dress";
-            d = 900;
+        function booger() {
+            m = "Booger Backpack";
+            d = 100;
             addCart();
         }
 
-        function sleeves() {
-            m = "Collared Long Sleeves Top";
-            d = 230;
+        function fart() {
+            m = "Fart Pencil Case";
+            d = 100;
             addCart();
         }
 
         function prev() {
-            window.location.assign("anime-manga.html")
+            window.location.assign("fashion.html")
         }
 
         function next() {
-            window.location.assign("school-materials.html")
+            window.location.assign("best-sellers.html")
         }
 
         function home() {
@@ -983,10 +1016,6 @@
             window.location.assign("Company-page.html")
         }
     </script>
-
-
-
-
 
 </body>
 
