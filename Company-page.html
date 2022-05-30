@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About the Company</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Fredoka:wght@300;400&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2a99417a45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        body {
+            background-color: honeydew;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 600px;
+            height: 500px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            left: 560px;
+
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/6 etc) */
+        .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+            color: black;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+        h1 {
+            margin-top: 0px;
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Blaka Hollow', cursive;
+            color: black;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px bisque;
+        }
+
+        .center {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+
+        #Headingbar {
+            width: 100%;
+            background-color: #7abd9c;
+            height: 100px;
+            margin: 0px;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+
+        }
+
+        #Titlebar {
+            background-color: #cbdfba;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            height: 130px;
+            margin: 0px;
+
+        }
+
+        #search {
+            margin-top: 18px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            font-size: 30px;
+            background-color: #7abd9c;
+            color: black;
+        }
+
+        #Headingbar ::placeholder {
+            color: black;
+        }
+
+        #company p {
+            margin-left: 2%;
+            margin-top: 8px;
+
+        }
+
+        #cart p {
+            margin-left: 7%;
+        }
+
+        #company {
+            margin-top: 18px;
+            float: right;
+            width: 220px;
+            height: 50px;
+            border: 2px solid black;
+            margin-right: 3%;
+            font-size: 18px;
+        }
+
+
+        #cart {
+            margin-top: 18px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            margin-right: 3%;
+            font-size: 30px;
+        }
+
+
+        #Headingbar p {
+            float: left;
+        }
+
+        #Headingbar button {
+            background-color: #7abd9c;
+            padding: 0px;
+
+        }
+
+        #Headingbar div:hover {
+            background-color: #7effa9;
+        }
+
+        #logo {
+            border-radius: 100px;
+            border: 0.1px solid black;
+            margin-left: 10%;
+            margin-top: 2px;
+            float: left;
+        }
+
+        #Titlebar h1 {
+            float: left;
+            font-family: 'EB Garamond', serif;
+            font-size: 70px;
+            margin-top: 17px;
+        }
+
+        #Titlebar h2 {
+            font-family: 'EB Garamond', serif;
+            font-size: 70px;
+            margin-top: 15px;
+            display: none;
+        }
+
+
+        .fa-city {
+            font-size: 25px;
+            margin-top: 2px;
+        }
+
+        #comp {
+            font-size: 19px;
+        }
+
+        #Advertisement {
+            float: left;
+            width: 35%;
+            height: 60px;
+            background-color: white;
+            float: right;
+            margin-right: 30px;
+            border-radius: 25px;
+            margin-top: 25px;
+        }
+
+        #titlecontent {
+            margin-left: 5px;
+            float: left;
+            width: 500px;
+            color: black;
+            height: 130px;
+        }
+
+        h3 {
+            padding-left: 7px;
+            margin-top: 7px;
+            font-family: 'Signika', sans-serif;
+            font-size: 40px;
+        }
+
+        .fa-exclamation-circle {
+            color: #7abd9c;
+            float: right;
+            margin-right: 5px;
+        }
+
+        .mediaquer {
+            display: none;
+            font-size: 30px;
+        }
+
+
+        #Searchbutton {
+            float: right;
+            margin-top: 18px;
+            width: 50px;
+            margin-right: 3%;
+            height: 50px;
+            border: 2px solid black;
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 1329px) {
+
+            #Advertisement h3 {
+                font-size: 28px;
+            }
+
+            #Advertisement {
+                float: left;
+                width: 30%;
+                height: 60px;
+                background-color: white;
+                float: right;
+                margin-right: 30px;
+                border-radius: 25px;
+                margin-top: 25px;
+                padding-top: 5px;
+            }
+
+        }
+
+        @media screen and (max-width: 1119px) {
+
+            #Advertisement {
+                display: none;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 800px) {
+
+            .slideshow-container,
+            h1 {
+                margin-left: 200px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            #search {
+                width: 150px;
+            }
+        }
+
+        @media screen and (max-width: 721px) {
+
+            #titlecontent {
+                width: 300px;
+            }
+
+            #Titlebar h1 {
+                display: none;
+            }
+
+            #Titlebar h2 {
+                display: block;
+                margin-top: 0px;
+                padding-top: 18px;
+            }
+
+            #Advertisement {
+                display: none;
+            }
+
+            #search {
+                width: 120px;
+            }
+
+            #cart {
+                width: 170px;
+            }
+
+        }
+
+
+        @media screen and (max-width: 682px) {
+            #logo {
+                margin-left: 5%;
+            }
+
+            #titlecontent {
+                display: none;
+            }
+
+            #search {
+                width: 105px;
+            }
+        }
+
+        @media screen and (max-width: 625px) {
+            #company {
+                margin-top: 18px;
+                float: right;
+                width: 50px;
+                height: 50px;
+                border: none;
+                margin-right: 15px;
+                font-size: 18px;
+                padding: 5px;
+
+            }
+
+            #cart {
+                margin-top: 18px;
+                float: right;
+                width: 50px;
+                height: 50px;
+                border: none;
+                margin-right: 5px;
+                font-size: 30px;
+                padding: 5px;
+            }
+
+            #search {
+                width: 160px;
+                float: left;
+            }
+
+            #Searchbutton {
+                float: left;
+                margin-top: 18px;
+                margin-right: 0px;
+                width: 50px;
+                height: 50px;
+                border: 2px solid black;
+                font-size: 30px;
+            }
+
+            .buttontext {
+                display: none;
+            }
+
+            .mediaquer {
+                display: block;
+            }
+
+            .carty {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 574px) {
+
+            #logo {
+                display: none;
+            }
+
+            #Titlebar h2 {
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width: 429px) {
+            #Titlebar h2 {
+                font-size: 50px;
+                padding-top: 37px;
+            }
+
+            #search {
+                width: 108px;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+            #Searchbutton {
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+
+            #cart {
+                margin-top: 10px;
+            }
+
+            #company {
+                margin-top: 10px;
+            }
+
+            #Titlebar h2 {
+                padding-top: 10px;
+                font-size: 45px;
+                margin-bottom: 0px;
+            }
+
+            #Titlebar {
+                height: 90px;
+            }
+
+            #Headingbar {
+                height: 80px;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+
+            .prev,
+            .next {
+                font-size: 11px
+            }
+
+            .slideshow-container,
+            h1 {
+                margin-left: 50%;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div id="Headingbar">
+                <div onclick="home()" id="cart">
+                    <p class="buttontext">Home <i class="fas fa-home"></i></p>
+                    <p><i class="fas fa-home mediaquer carty"></i></p>
+                </div>
+                <div onclick="comp()" id="company">
+                    <p id="comp" class="buttontext">About the Company <i class="fas fa-city"></i></p>
+                    <p><i class="fas fa-city mediaquer"></i></p>
+    
+                </div>
+                <button id="Searchbutton"><i class="fas fa-search"></i></button>
+                <form>
+                    <input id="search" type="text" placeholder="Search..">
+                </form>
+    
+    
+            </div>
+
+            <div id="Titlebar">
+                <img id="logo" src="https://i.imgur.com/MUKANCI.png" width="125" height="125" alt="Los Angeles">
+                <h2>THE TREND</h2>
+                <div id="titlecontent">
+                    <h1>THE TREND</h1>
+                </div>
+                <div id="Advertisement">
+                    <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
+                </div>
+            </div>
+        </div>
+
+        <h1>TITAN SLAYERS</h1>
+
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/280024507_4573950672706787_1821914481416312161_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHace9ud14Meqb-lUol-Rx2YV9Py2ieBV5hX0_LaJ4FXrMyLlE9H1YT-WXoaAgQkfafkuKpMkus7h28VXuMuO8i&_nc_ohc=8viWcUPjAnsAX-L3U7r&_nc_ht=scontent.fmnl17-5.fna&oh=03_AVKMOppf5HFIMUUgsYOtLQoMgdHMYWar-AGnge45C-ttsg&oe=62B45B26"
+                    alt=" " style="width:600px; height: 500px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/279003083_369202948360938_8349862340715488514_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeF-648RiAt8mm0gzcloUo5Gc1nbpNGObddzWduk0Y5t1whPLsx_jrbAQa1f3eLfyFoZIHC4BFe7zpMdy7ah6uW3&_nc_ohc=A4FDHY-DNUoAX9Nikuw&_nc_ht=scontent.fmnl17-5.fna&oh=03_AVLDxaLTlwdXFVNk2CIdf0gn6kL4JsLQAQn47lQBoUIeog&oe=62B5767E"
+                    alt=" " style="width:600px; height: 500px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/280439027_306462238347506_323155464050256062_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeE7wnvuGDS_r5EWedQepZPXscn8yI9gMtKxyfzIj2Ay0hOh3foJpVUWjlbSATThjqrLzQdoK_EO0pdKQpz2ebaH&_nc_ohc=sjdQOOg7PpQAX8jTqXB&_nc_ht=scontent.fmnl17-1.fna&oh=03_AVJXtKcK0bT5ERtYJBJYoNfA2VToF9qU9CfyLz7dzZDHsw&oe=62B55F84"
+                    alt=" " style="width:600px; height: 500px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/279918767_538899047801903_3702047403084764684_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeH7SBk6NmJRxSLDAmFWlg2EvrSpfRzzYyK-tKl9HPNjIu_rr51elOAesg0UaM3MVBf9kqE61ar9gGy_IOswVmwL&_nc_ohc=3bwYdEHAWwEAX_nSc5J&_nc_ht=scontent.fmnl17-4.fna&oh=03_AVLEtCoeD7v5E9guTX64gc4GDWsTRL2MbeX92ORTcDgMjQ&oe=62B58E95"
+                    alt=" " style="width:600px; height: 500px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/279967901_424180876376557_1846100439172228786_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGUfeE9dXyBvriFSOQRTyx4m7-A27APDI-bv4DbsA8Mj21uwUr-vtGdxDgcp9CwWcq8v8pBbCWt3tld0zhmKRkH&_nc_ohc=aGbKFmQhk1kAX_iNlUh&_nc_ht=scontent.fmnl17-3.fna&oh=03_AVLYo7K_cf9NGOTjYCxtIyES8vRpexZkoAFtv8_Vv8RNGQ&oe=62B1F890"
+                    alt=" " style="width:600px; height: 500px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/279851403_1619599735084312_7333387451325961977_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGb3PBJTInyz1ekt1YXonPiWLV0-4K4UdFYtXT7grhR0blK-yXMwZWIarTZYtsfGd8CQbN6VK4ilm9AbH_dTp3x&_nc_ohc=ywRqSaZPc3YAX-kjjK-&_nc_ht=scontent.fmnl17-2.fna&oh=03_AVINy_Uimbm8AwiKF2Y_LlZtlXYGMODZt8MMFmowlLHHCw&oe=62B24AD4"
+                    alt=" " style="width:600px; height: 500px;">
+            </div>
+
+            <a style="color: black;" class="prev" onclick="plusSlides(-1)">❮</a>
+            <a style="color: black;" class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+
+        <div class="center">
+            <img src="https://lh3.googleusercontent.com/IF9n43zk_5LITwVERopfIpr977NSeabV2mbl2URsvfOaPkh1b1UXH4sFOC1fvkBNmPzNc2Nsl85CrPbmF-1RnF_1t5YiM9eFz4Vve-A4JPY8WXujQ_NbcTiyqsgQV6oPhGjsFjqDZ-4=w2400"
+                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+
+            <img src="https://lh3.googleusercontent.com/sbNb5GuFL59C5ojrNPpJDTJcR8zJ-ell9WX0Yfr17olDGahW02oxy6dHSM1SCWB36zCBZ_SUyMx6_Q3prswU8k3B8xkGl9GBWKDNi5I4T6xzNEALm7g5RMepS8Pqr0NftUDd0OjmaMM=w2400"
+                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+
+            <img src="https://lh3.googleusercontent.com/WeBVRNamRTEJSsYYqW65b2aPcvq3qcmn1NuLKX3Iu32K7V9LMl6F7GHNvzy3XoZbyLDmYILIH_Y350OUzMTLxXFZQd1Hxy__lKNAQ07KuidKP-bnwFgvn3dz_yXPe879VFUFNVZomUY=w2400"
+                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+
+            <img src="https://lh3.googleusercontent.com/Q86IrfISaJ0mpS0cw-NEBnb41hg5ILyHeLYGWU0fMyUpUEgEmwxi1pBGCVYFhUeBmbmodGSRDYUtPJIGbmMQmueZ6Ip4JxhGXhEL62-JMm27aO5jqICr8SvuVUc6S0VPINNA3bv_0kg=w2400"
+                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+
+            <img src="https://lh3.googleusercontent.com/9dCt0Hw232bYYe87RruJoSML7lzSk2-wDbkV4xwJyzxCJPGv9Q12KBq4-M1f07AxFWs8QkS2WhPt6JNF9aixDEHGZiMRvICSGlkNeNAHCbARVrMAhceDoQmnwnh2P9yrgmHfiTH0EQc=w2400"
+                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+
+            <img src="https://lh3.googleusercontent.com/NZFAxL9nDa6U-zyvzG3sIQ_j6jn4u9IZqfr59AJAk_mX4jIKypdk3MlqbxYgI7BadMpwr_MUAzjcf6cMYAWyF6ZhQSa8mwc1LyOpc7Tpa3J73-q5RJC7dShQKOzjUiv70YHtgLp4lds=w2400"
+                alt="applicants" style="width: 1000px; margin-bottom: 30px;">
+
+        </div>
+    </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function home() {
+            window.location.assign("index.html")
+        }
+
+        function comp() {
+            window.location.assign("Company-page.html")
+        }
+    </script>
+</body>
+
+</html>

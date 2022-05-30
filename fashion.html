@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Fashion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Mali&family=Patrick+Hand&family=Sriracha&family=Tapestry&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2a99417a45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #D6E5FA;
+        }
+
+        #former {
+            font-family: 'Sriracha', cursive;
+        }
+
+        #carlos {
+            display: none;
+        }
+
+        .categ1 {
+            text-align: center;
+            background-color: #fff5d3;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Tapestry', cursive;
+        }
+
+        .categ2 {
+            text-align: center;
+            background-color: #fff5d3;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Mali', cursive;
+        }
+
+
+        .categ3 {
+            text-align: center;
+            background-color: #F9ECEC;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Major Mono Display', cursive;
+        }
+
+        .btn {
+            background-color: #F9ECEC;
+            border-color: #F9ECEC;
+            color: black;
+        }
+
+        .categ4 {
+            text-align: center;
+            background-color: #fff5d3;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .categ5 {
+            text-align: center;
+            background-color: #fff5d3;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Sriracha', cursive;
+        }
+
+        .items {
+            background-color: #fff9e5;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 20px;
+        }
+
+        .label {
+            float: right;
+            font-family: 'Tapestry', cursive;
+            text-align: center;
+
+        }
+
+        .label2 {
+            float: left;
+            margin-left: 13%;
+            margin-top: 13%;
+            font-family: 'Mali', cursive;
+            font-size: 25px;
+        }
+
+        .label3 {
+            float: right;
+            font-family: 'Major Mono Display', cursive;
+            text-align: center;
+
+        }
+
+        .label4 {
+            float: left;
+            margin-left: 13%;
+            margin-top: 13%;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 25px;
+        }
+
+        .label5 {
+            float: right;
+            font-family: 'Sriracha', cursive;
+            text-align: right;
+            margin-top: 13%;
+            margin-right: 10%;
+            font-size: 25px;
+        }
+
+        .row {
+            padding-top: 25px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .img-fluid {
+            width: 300px;
+
+        }
+
+        .sell {
+            float: left;
+            width: 50%;
+
+        }
+
+        .left {
+            margin-left: 5%;
+
+
+        }
+
+        .label2 .left {
+            float: right;
+        }
+
+        .right {
+            margin-left: 5%;
+        }
+
+        .label p {
+            font-size: 32px;
+        }
+
+        .container-fluid {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+
+        #stone {
+            margin-top: 50px;
+        }
+
+        #rak {
+            font-size: 28px;
+        }
+
+        #aclass {
+            font-size: 30px;
+        }
+
+        #tokrev {
+            font-size: 28px;
+        }
+
+        #manga {
+            font-size: 29px;
+        }
+
+        .label3 p {
+            font-size: 25px;
+        }
+
+        .post {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e9ecef;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+            border-left-color: #11832d;
+        }
+
+        .prev {
+            background-color: #D6E5FA;
+            display: inline-block;
+        }
+
+        .next {
+            background-color: #D6E5FA;
+        }
+
+        .ious {
+            background-color: #D6E5FA;
+            display: none;
+        }
+
+        .fash {
+            width: 30%;
+            margin-right: 0px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #Headingbar {
+            width: 100%;
+            background-color: #7abd9c;
+            height: 100px;
+            margin: 0px;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+
+        }
+
+        #Titlebar {
+            background-color: #cbdfba;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            height: 130px;
+            margin: 0px;
+
+        }
+
+        #search {
+            margin-top: 18px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            font-size: 30px;
+            background-color: #7abd9c;
+            color: black;
+        }
+
+        #Headingbar ::placeholder {
+            color: black;
+        }
+
+        #company p {
+            margin-left: 2%;
+            margin-top: 8px;
+
+        }
+
+        #cart p {
+            margin-left: 7%;
+        }
+
+        #company {
+            margin-top: 18px;
+            float: right;
+            width: 220px;
+            height: 50px;
+            border: 2px solid black;
+            margin-right: 3%;
+            font-size: 18px;
+        }
+
+
+        #cart {
+            margin-top: 18px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            margin-right: 3%;
+            font-size: 30px;
+        }
+
+
+        #Headingbar p {
+            float: left;
+        }
+
+        #Headingbar button {
+            background-color: #7abd9c;
+            padding: 0px;
+
+        }
+
+        #Headingbar div:hover {
+            background-color: #7effa9;
+        }
+
+        #logo {
+            border-radius: 100px;
+            border: 0.1px solid black;
+            margin-left: 10%;
+            margin-top: 2px;
+            float: left;
+        }
+
+        #Titlebar h1 {
+            float: left;
+            font-family: 'EB Garamond', serif;
+            font-size: 70px;
+            margin-top: 17px;
+        }
+
+        #Titlebar h2 {
+            font-family: 'EB Garamond', serif;
+            font-size: 70px;
+            margin-top: 15px;
+            display: none;
+        }
+
+
+        .fa-city {
+            font-size: 25px;
+            margin-top: 2px;
+        }
+
+        #comp {
+            font-size: 19px;
+        }
+
+        #Advertisement {
+            float: left;
+            width: 35%;
+            height: 60px;
+            background-color: white;
+            float: right;
+            margin-right: 30px;
+            border-radius: 25px;
+            margin-top: 25px;
+        }
+
+        #titlecontent {
+            margin-left: 5px;
+            float: left;
+            width: 500px;
+            color: black;
+            height: 130px;
+        }
+
+        h3 {
+            padding-left: 7px;
+            margin-top: 7px;
+            font-family: 'Signika', sans-serif;
+            font-size: 40px;
+        }
+
+        .fa-exclamation-circle {
+            color: #7abd9c;
+            float: right;
+            margin-right: 5px;
+        }
+
+        .mediaquer {
+            display: none;
+            font-size: 30px;
+        }
+
+
+        #Searchbutton {
+            float: right;
+            margin-top: 18px;
+            width: 50px;
+            margin-right: 3%;
+            height: 50px;
+            border: 2px solid black;
+            font-size: 30px;
+        }
+
+        #former {
+            padding-left: 15px;
+        }
+
+        #former .btn {
+            margin-left: 0px;
+            margin-bottom: 15px;
+        }
+
+        #timeline {
+            margin-left: 15px;
+        }
+
+        h5 {
+            margin-left: 15px;
+        }
+
+        @media screen and (max-width: 1329px) {
+
+            #Advertisement h3 {
+                font-size: 28px;
+            }
+
+            #Advertisement {
+                float: left;
+                width: 30%;
+                height: 60px;
+                background-color: white;
+                float: right;
+                margin-right: 30px;
+                border-radius: 25px;
+                margin-top: 25px;
+                padding-top: 5px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1180px) {
+            .prev {
+                background-color: #D6E5FA;
+                display: none;
+            }
+
+            .ious {
+                background-color: #D6E5FA;
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+
+            .next {
+                background-color: #D6E5FA;
+                margin-left: 5px;
+            }
+
+            .fash {
+                width: 100%;
+                margin-right: 0px;
+
+                text-align: center;
+                display: block;
+
+            }
+
+
+        }
+
+        @media screen and (max-width: 721px) {
+
+            #titlecontent {
+                width: 300px;
+            }
+
+            #Titlebar h1 {
+                display: none;
+            }
+
+            #Titlebar h2 {
+                display: block;
+                margin-top: 0px;
+                padding-top: 18px;
+            }
+
+            #Advertisement {
+                display: none;
+            }
+
+            #search {
+                width: 120px;
+            }
+
+            #cart {
+                width: 170px;
+            }
+
+
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            #search {
+                width: 150px;
+            }
+        }
+
+        @media screen and (max-width: 1105px) {
+
+            #Advertisement {
+                display: none;
+            }
+
+
+        }
+
+        @media screen and (max-width: 682px) {
+            #logo {
+                margin-left: 5%;
+            }
+
+            #titlecontent {
+                display: none;
+            }
+
+            #search {
+                width: 105px;
+            }
+        }
+
+        @media screen and (max-width: 625px) {
+            #company {
+                margin-top: 18px;
+                float: right;
+                width: 50px;
+                height: 50px;
+                border: none;
+                margin-right: 15px;
+                font-size: 18px;
+                padding: 5px;
+
+            }
+
+            #cart {
+                margin-top: 18px;
+                float: right;
+                width: 50px;
+                height: 50px;
+                border: none;
+                margin-right: 5px;
+                font-size: 30px;
+                padding: 5px;
+            }
+
+            #search {
+                width: 160px;
+                float: left;
+            }
+
+            #Searchbutton {
+                float: left;
+                margin-top: 18px;
+                margin-right: 0px;
+                width: 50px;
+                height: 50px;
+                border: 2px solid black;
+                font-size: 30px;
+            }
+
+            .buttontext {
+                display: none;
+            }
+
+            .mediaquer {
+                display: block;
+            }
+
+            .carty {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 574px) {
+
+            #logo {
+                display: none;
+            }
+
+            #Titlebar h2 {
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width: 429px) {
+            #Titlebar h2 {
+                font-size: 50px;
+                padding-top: 37px;
+            }
+
+            #search {
+                width: 108px;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+            #Searchbutton {
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+
+            #cart {
+                margin-top: 10px;
+            }
+
+            #company {
+                margin-top: 10px;
+            }
+
+            #Titlebar h2 {
+                padding-top: 10px;
+                font-size: 45px;
+                margin-bottom: 0px;
+            }
+
+            #Titlebar {
+                height: 90px;
+            }
+
+            #Headingbar {
+                height: 80px;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .items {
+                background-color: #fff9e5;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 20px;
+            }
+
+            .left {
+                margin-left: 15%;
+            }
+
+            .right {
+                margin-left: 10%;
+            }
+
+            .categ3 {
+                text-align: center;
+                background-color: #F9ECEC;
+                font-size: 50px;
+                margin-bottom: 0px;
+                border-bottom: solid;
+                border-top: solid;
+                font-family: 'Major Mono Display', cursive;
+            }
+
+            .container-fluid {
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+
+            .img-fluid {
+                width: 150px;
+            }
+
+            #stone {
+                margin-top: 20px;
+            }
+
+            .label p {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            #rak,
+            #tokrev,
+            #manga {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                font-size: 20px;
+                margin-left: 17%;
+            }
+
+            #aclass {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                font-size: 19px;
+                margin-left: 9%;
+            }
+
+            .label3 p {
+                font-size: 17px;
+                margin-left: 17%;
+                text-align: center;
+            }
+
+            .btn {
+                margin-left: 17%;
+            }
+
+            #class {
+                margin-bottom: 5%;
+            }
+
+            .prev {
+                background-color: #D6E5FA;
+                display: none;
+            }
+
+            .ious {
+                background-color: #D6E5FA;
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+
+            .next {
+                background-color: #D6E5FA;
+                margin-left: 5px;
+            }
+
+            .fash {
+                width: 30%;
+                margin-right: 0px;
+                margin-left: 15%;
+                text-align: center;
+                display: block;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="Headingbar">
+            <div onclick="home()" id="cart">
+                <p class="buttontext">Home <i class="fas fa-home"></i></p>
+                <p><i class="fas fa-home mediaquer carty"></i></p>
+            </div>
+            <div onclick="comp()" id="company">
+                <p id="comp" class="buttontext">About the Company <i class="fas fa-city"></i></p>
+                <p><i class="fas fa-city mediaquer"></i></p>
+
+            </div>
+            <button id="Searchbutton"><i class="fas fa-search"></i></button>
+            <form>
+                <input id="search" type="text" placeholder="Search..">
+            </form>
+
+
+        </div>
+        <div id="Titlebar">
+            <img id="logo" src="https://i.imgur.com/MUKANCI.png" width="125" height="125" alt="Los Angeles">
+            <h2>THE TREND</h2>
+            <div id="titlecontent">
+                <h1>THE TREND</h1>
+            </div>
+            <div id="Advertisement">
+                <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
+            </div>
+        </div>
+        <div class="categ3"><button class="btn btn-primary prev" onclick="prev()">Prev</button>
+            <div class="fash">
+                <p> Fashion </p>
+            </div> <button class="btn btn-primary ious" onclick="prev()">Prev</button><button
+                class="btn btn-primary next" onclick="next()">Next</button>
+        </div>
+        <div class="items" style="background-color: #D6E5FA;">
+            <div class="row">
+                <div class="sell">
+                    <img src="http://img.ltwebstatic.com/images3_pi/2021/08/16/16290859057571b28429cdf4d8764805efd1e134b7_thumbnail_405x552.jpg"
+                        class="img-fluid left" alt="item1">
+                    <div class="label3" style="margin-right: 11%; margin-top: 18%;">
+                        <p> argyle Print <br> Tank Top </p>
+                        <p>php 250.00</p>
+                        <button class="btn btn-primary" onclick="tanktop()">add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2021/11/25/1637833390c2a82e203e962f4344ff7c7288944dde.webp"
+                        class="img-fluid right" alt="item2">
+                    <div class="label3" style="margin-right: 13%; margin-top: 18%;">
+                        <p>Minimalist <br> ruched Bag</p>
+                        <p>php 200.00</p>
+                        <button class="btn btn-primary" onclick="bag()">add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sell">
+                    <img src="https://i.pinimg.com/originals/3a/4b/c5/3a4bc57f6b378bc51a64d68cbe2f900a.jpg"
+                        class="img-fluid left" alt="item1">
+                    <div class="label3" style="margin-right: 9%; margin-top: 13%;">
+                        <p>Back zipper <br> Chunky heeled <br> Classic Boots </p>
+                        <p>php 980.00</p>
+                        <button class="btn btn-primary" onclick="boots()">add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://img.ltwebstatic.com/images3_pi/2022/04/20/1650432880db2ebd39a9fd2e75a94bd902e901ed72.jpg"
+                        class="img-fluid right" alt="item2">
+                    <div class="label3" style="margin-right: 5%; margin-top: 15%;">
+                        <p>3 Pieces<br> Faux Pearl <br> Decor necklace</p>
+                        <p>php 50.00</p>
+                        <button class="btn btn-primary" onclick="necklace()">add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sell">
+                    <img src="https://www.ubuy.com/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFMVFpBK21WMEwuX0FDX1VMMTUwMF8uanBn.jpg"
+                        class="img-fluid left" alt="item1">
+                    <div class="label3" style="margin-right: 6%; margin-top: 10%;">
+                        <p>Square neck <br> ruffle Dress</p>
+                        <p>php 280.00 each</p>
+                        <button class="btn btn-primary" onclick="dress()">add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://i.pinimg.com/564x/79/aa/fb/79aafb2823742f7dc4bfdc52d149e7a5.jpg"
+                        class="img-fluid right" alt="item2">
+                    <div class="label3" style="margin-right: 6%; margin-top: 10%;">
+                        <p> Collared Long <br> Sleeves Top</p>
+                        <p>php 230.00 each</p>
+                        <button class="btn btn-primary" onclick="sleeves()">add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <form id="former" action="http://sirjm.infinityfreeapp.com/checkout.php" method="get">
+            <h4>Check Out</h4>
+            <div class="my-3">
+                <label for="txtName" class="form-label">Name</label>
+                <input id="txtName" class="form-control" name="cust_name" type="text" placeholder="e.g. John Smith">
+            </div>
+            <div class="my-3">
+                <label for="txtEmail" class="form-label">Email</label>
+
+                <input id="txtEmail" class="form-control" name="cust_email" type="email"
+                    placeholder="e.g. jsmith@example.com">
+            </div>
+            <div class="my-3">
+                <label for="txtAddress" class="form-label">Address</label>
+                <input id="txtAddress" class="form-control" name="cust_addr" type="text"
+                    placeholder="e.g. Lily Hill, Mabalacat, Pampanga">
+            </div>
+
+            <div class="my-3 form-label">
+                <input id="carlos" class="form-control" name="cust_order" type="text">
+            </div>
+            <input type="submit" value="Check Out" onclick="saveCart()" class="btn btn-primary">
+        </form>
+        <h5>My Cart</h5>]
+        <hr>
+        <div id="timeline">
+
+        </div>
+
+    </div>
+
+    <script>
+        var cust_order = [];
+        var d = 0;
+        var m = "";
+
+        if (localStorage.getItem('cust_order') == null) {
+
+        } else {
+            var cust_orderJSON = localStorage.getItem('cust_order');
+            cust_order = JSON.parse(cust_orderJSON);
+        }
+
+
+        function displayCart() {
+            document.getElementById('timeline').innerHTML = "";
+            for (var i = 0; i < cust_order.length; i++) {
+                document.getElementById('timeline').innerHTML += '<div class="post"><h5>' + cust_order[i].prod_name + '</h5><button class="btn btn-sm btn-outline-danger" onclick="removeAt(' + i + ')">Delete</button></div>';
+            }
+        }
+        displayCart();
+
+        function addCart() {
+            var p = { prod_name: m, prod_price: d };
+            cust_order.push(p);
+            displayCart();
+            saveCart();
+        }
+
+        function removeAt(i) {
+            cust_order.splice(i, 1);
+
+
+            displayCart();
+            localStorage.setItem('cust_order', JSON.stringify(cust_order));
+        }
+
+        function saveCart() {
+            localStorage.setItem('cust_order', JSON.stringify(cust_order));
+            if (localStorage.getItem('cust_order') == '[]') {
+                document.getElementById('carlos').value = "";
+            } else {
+                document.getElementById('carlos').value = JSON.stringify(cust_order);
+            }
+
+        }
+
+        function tanktop() {
+            m = "Argyle Print Tank Top";
+            d = 250;
+            addCart();
+        }
+
+        function bag() {
+            m = "Minimalist Ruched Bag";
+            d = 200;
+            addCart();
+        }
+
+        function boots() {
+            m = "Back Zipper Chunky Heeled Classic Boots";
+            d = 980;
+            addCart();
+        }
+
+        function necklace() {
+            m = "3pcs Faux Pearl Decor Necklace";
+            d = 50;
+            addCart();
+        }
+
+        function dress() {
+            m = "Square Neck Ruffle Dress";
+            d = 900;
+            addCart();
+        }
+
+        function sleeves() {
+            m = "Collared Long Sleeves Top";
+            d = 230;
+            addCart();
+        }
+
+        function prev() {
+            window.location.assign("anime-manga.html")
+        }
+
+        function next() {
+            window.location.assign("school-materials.html")
+        }
+
+        function home() {
+            window.location.assign("index.html")
+        }
+
+        function comp() {
+            window.location.assign("Company-page.html")
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>

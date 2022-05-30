@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Anime and Manga</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Mali&family=Patrick+Hand&family=Sriracha&family=Tapestry&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2a99417a45.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #fff9e5;
+        }
+
+        #former {
+            font-family: 'Sriracha', cursive;
+        }
+
+        #Headingbar {
+            width: 100%;
+            background-color: #7abd9c;
+            height: 100px;
+            margin: 0px;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+
+        }
+
+        #Titlebar {
+            background-color: #cbdfba;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            height: 130px;
+            margin: 0px;
+
+        }
+
+        #search {
+            margin-top: 18px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            font-size: 30px;
+            background-color: #7abd9c;
+            color: black;
+        }
+
+        #Headingbar ::placeholder {
+            color: black;
+        }
+
+        #company p {
+            margin-left: 2%;
+            margin-top: 8px;
+
+        }
+
+        #cart p {
+            margin-left: 7%;
+        }
+
+        #company {
+            margin-top: 18px;
+            float: right;
+            width: 220px;
+            height: 50px;
+            border: 2px solid black;
+            margin-right: 3%;
+            font-size: 18px;
+        }
+
+
+        #cart {
+            margin-top: 18px;
+            float: right;
+            width: 200px;
+            height: 50px;
+            border: 2px solid black;
+            margin-right: 3%;
+            font-size: 30px;
+        }
+
+
+        #Headingbar p {
+            float: left;
+        }
+
+        #Headingbar button {
+            background-color: #7abd9c;
+            padding: 0px;
+
+        }
+
+        #Headingbar div:hover {
+            background-color: #7effa9;
+        }
+
+        #logo {
+            border-radius: 100px;
+            border: 0.1px solid black;
+            margin-left: 10%;
+            margin-top: 2px;
+            float: left;
+        }
+
+        #Titlebar h1 {
+            float: left;
+            font-family: 'EB Garamond', serif;
+            font-size: 70px;
+            margin-top: 17px;
+        }
+
+        #Titlebar h2 {
+            font-family: 'EB Garamond', serif;
+            font-size: 70px;
+            margin-top: 15px;
+            display: none;
+        }
+
+
+        .fa-city {
+            font-size: 25px;
+            margin-top: 2px;
+        }
+
+        #comp {
+            font-size: 19px;
+        }
+
+        #Advertisement {
+            float: left;
+            width: 35%;
+            height: 60px;
+            background-color: white;
+            float: right;
+            margin-right: 30px;
+            border-radius: 25px;
+            margin-top: 25px;
+        }
+
+        #titlecontent {
+            margin-left: 5px;
+            float: left;
+            width: 500px;
+            color: black;
+            height: 130px;
+        }
+
+        h3 {
+            padding-left: 7px;
+            margin-top: 7px;
+            font-family: 'Signika', sans-serif;
+            font-size: 40px;
+        }
+
+        .fa-exclamation-circle {
+            color: #7abd9c;
+            float: right;
+            margin-right: 5px;
+        }
+
+        .mediaquer {
+            display: none;
+            font-size: 30px;
+        }
+
+
+        #Searchbutton {
+            float: right;
+            margin-top: 18px;
+            width: 50px;
+            margin-right: 3%;
+            height: 50px;
+            border: 2px solid black;
+            font-size: 30px;
+        }
+
+        .categ1 {
+            text-align: center;
+            background-color: #97BFB4;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Tapestry', cursive;
+        }
+
+        .btn {
+            background-color: #97BFB4;
+            border-color: #97BFB4;
+        }
+
+        .categ2 {
+            text-align: center;
+            background-color: #fff5d3;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Mali', cursive;
+        }
+
+
+        .categ3 {
+            text-align: center;
+            background-color: #F9ECEC;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Major Mono Display', cursive;
+        }
+
+        .categ4 {
+            text-align: center;
+            background-color: #fff5d3;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Patrick Hand', cursive;
+        }
+
+        .categ5 {
+            text-align: center;
+            background-color: #fff5d3;
+            font-size: 75px;
+            margin-bottom: 0px;
+            border-bottom: solid;
+            border-top: solid;
+            font-family: 'Sriracha', cursive;
+        }
+
+        .items {
+            background-color: #F5EEDC;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 20px;
+        }
+
+        .label {
+            float: right;
+            font-family: 'Tapestry', cursive;
+            text-align: center;
+            font-weight: 400;
+            color: #333333;
+        }
+
+        .label-r1 {
+            float: right;
+            font-family: 'Tapestry', cursive;
+            text-align: center;
+            margin-right: 13%;
+            margin-top: 25%;
+        }
+
+        .label-r2 {
+            float: right;
+            font-family: 'Tapestry', cursive;
+            text-align: center;
+            margin-right: 18%;
+            margin-top: 10%;
+        }
+
+        .label-r3 {
+            float: right;
+            font-family: 'Tapestry', cursive;
+            text-align: center;
+            margin-right: 13%;
+            margin-top: 10%;
+        }
+
+        .row {
+            padding-top: 25px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .img-fluid {
+            width: 300px;
+
+        }
+
+        .sell {
+            float: left;
+            width: 50%;
+
+        }
+
+        .left {
+            margin-left: 5%;
+
+
+        }
+
+        .label2 .left {
+            float: right;
+        }
+
+        .right {
+            margin-left: 5%;
+        }
+
+        p {
+            font-size: 32px;
+        }
+
+
+
+        .container-fluid {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+
+        #stone {
+            margin-top: 50px;
+        }
+
+        #rak {
+            font-size: 28px;
+        }
+
+        #aclass {
+            font-size: 30px;
+        }
+
+        #tokrev {
+            font-size: 28px;
+        }
+
+        #manga {
+            font-size: 29px;
+        }
+
+        .label3 p {
+            font-size: 25px;
+        }
+
+        .post {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e9ecef;
+            border-left-width: .25rem;
+            border-radius: .25rem;
+            border-left-color: #11832d;
+            font-family: 'Sriracha', cursive;
+        }
+
+        #carlos {
+            display: none;
+        }
+
+        .my-3 {
+            font-family: 'Sriracha', cursive;
+        }
+
+        .prev {
+            background-color: #F5EEDC;
+            display: inline-block;
+            color: black;
+        }
+
+        .next {
+            background-color: #F5EEDC;
+            color: black;
+        }
+
+        .ious {
+            background-color: #F5EEDC;
+            display: none;
+            color: black;
+        }
+
+        .fash {
+            width: 30%;
+            margin-right: 0px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #former {
+            padding-left: 15px;
+        }
+
+        #former .btn {
+            margin-left: 0px;
+            margin-bottom: 15px;
+        }
+
+        #timeline {
+            margin-left: 15px;
+        }
+
+        h5 {
+            margin-left: 15px;
+        }
+
+
+
+        @media screen and (max-width: 1329px) {
+
+            #Advertisement h3 {
+                font-size: 28px;
+            }
+
+            #Advertisement {
+                float: left;
+                width: 30%;
+                height: 60px;
+                background-color: white;
+                float: right;
+                margin-right: 30px;
+                border-radius: 25px;
+                margin-top: 25px;
+                padding-top: 5px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1180px) {
+            .prev {
+                background-color: #F5EEDC;
+                display: none;
+                color: black;
+            }
+
+            .ious {
+                background-color: #F5EEDC;
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: 5px;
+                color: black;
+            }
+
+            .next {
+                background-color: #F5EEDC;
+                margin-left: 5px;
+                color: black;
+            }
+
+            .fash {
+                width: 100%;
+                margin-right: 0px;
+
+                text-align: center;
+                display: block;
+
+            }
+
+
+        }
+
+        @media screen and (max-width: 1119px) {
+
+            #Advertisement {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            #search {
+                width: 150px;
+            }
+        }
+
+        @media screen and (max-width: 721px) {
+
+            #titlecontent {
+                width: 300px;
+            }
+
+            #Titlebar h1 {
+                display: none;
+            }
+
+            #Titlebar h2 {
+                display: block;
+                margin-top: 0px;
+                padding-top: 18px;
+            }
+
+            #Advertisement {
+                display: none;
+            }
+
+            #search {
+                width: 120px;
+            }
+
+            #cart {
+                width: 170px;
+            }
+
+        }
+
+        @media screen and (max-width: 682px) {
+            #logo {
+                margin-left: 5%;
+            }
+
+            #titlecontent {
+                display: none;
+            }
+
+            #search {
+                width: 105px;
+            }
+        }
+
+        @media screen and (max-width: 625px) {
+            #company {
+                margin-top: 18px;
+                float: right;
+                width: 50px;
+                height: 50px;
+                border: none;
+                margin-right: 15px;
+                font-size: 18px;
+                padding: 5px;
+
+            }
+
+            #cart {
+                margin-top: 18px;
+                float: right;
+                width: 50px;
+                height: 50px;
+                border: none;
+                margin-right: 5px;
+                font-size: 30px;
+                padding: 5px;
+            }
+
+            #search {
+                width: 160px;
+                float: left;
+            }
+
+            #Searchbutton {
+                float: left;
+                margin-top: 18px;
+                margin-right: 0px;
+                width: 50px;
+                height: 50px;
+                border: 2px solid black;
+                font-size: 30px;
+            }
+
+            .buttontext {
+                display: none;
+            }
+
+            .mediaquer {
+                display: block;
+            }
+
+            .carty {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 574px) {
+
+            #logo {
+                display: none;
+            }
+
+            #Titlebar h2 {
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width: 429px) {
+            #Titlebar h2 {
+                font-size: 50px;
+                padding-top: 37px;
+            }
+
+            #search {
+                width: 108px;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+            #Searchbutton {
+                font-size: 25px;
+                margin-top: 10px;
+            }
+
+
+            #cart {
+                margin-top: 10px;
+            }
+
+            #company {
+                margin-top: 10px;
+            }
+
+            #Titlebar h2 {
+                padding-top: 10px;
+                font-size: 45px;
+                margin-bottom: 0px;
+            }
+
+            #Titlebar {
+                height: 90px;
+            }
+
+            #Headingbar {
+                height: 80px;
+            }
+        }
+
+
+        @media only screen and (max-width: 360px) {
+            .items {
+                background-color: #fff9e5;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-bottom: 20px;
+            }
+
+            .left {
+                margin-left: 15%;
+            }
+
+            .right {
+                margin-left: 10%;
+            }
+
+            .categ3 {
+                text-align: center;
+                background-color: #F9ECEC;
+                font-size: 50px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                border-bottom: solid;
+                border-top: solid;
+                font-family: 'Major Mono Display', cursive;
+            }
+
+            .container-fluid {
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+
+            .img-fluid {
+                width: 150px;
+            }
+
+            #stone {
+                margin-top: 20px;
+            }
+
+            .label p {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            #rak,
+            #tokrev,
+            #manga {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                font-size: 20px;
+                margin-left: 17%;
+            }
+
+
+
+            .label3 p {
+                font-size: 17px;
+                margin-left: 17%;
+                text-align: left;
+            }
+
+            .btn {
+                margin-left: 17%;
+            }
+
+            #class {
+                margin-bottom: 5%;
+            }
+
+            .prev {
+                background-color: #F5EEDC;
+                display: none;
+                color: black;
+            }
+
+            .ious {
+                background-color: #F5EEDC;
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: 5px;
+                color: black;
+            }
+
+            .next {
+                background-color: #F5EEDC;
+                margin-left: 5px;
+                color: black;
+            }
+
+            .fash {
+                width: 30%;
+                margin-right: 0px;
+                margin-left: 35%;
+                text-align: center;
+                display: block;
+            }
+
+            .label-r1 p {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                margin-right: 1%;
+                margin-top: 0%;
+                font-size: 19px;
+
+            }
+
+            .label-r1 {
+                margin-top: 40%;
+            }
+
+            .label-r2 p {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                margin-right: 5%;
+                margin-top: 5%;
+                font-size: 19px;
+            }
+
+            .label-r3 p {
+                float: right;
+                font-family: 'Tapestry', cursive;
+                text-align: center;
+                margin-right: 10%;
+                font-size: 19px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="Headingbar">
+            <div onclick="home()" id="cart">
+                <p class="buttontext">Home <i class="fas fa-home"></i></p>
+                <p><i class="fas fa-home mediaquer carty"></i></p>
+            </div>
+            <div onclick="comp()" id="company">
+                <p id="comp" class="buttontext">About the Company <i class="fas fa-city"></i></p>
+                <p><i class="fas fa-city mediaquer"></i></p>
+
+            </div>
+            <button id="Searchbutton"><i class="fas fa-search"></i></button>
+            <form>
+                <input id="search" type="text" placeholder="Search..">
+            </form>
+
+
+        </div>
+
+        <div id="Titlebar">
+            <img id="logo" src="https://i.imgur.com/MUKANCI.png" width="125" height="125" alt="Los Angeles">
+            <h2>THE TREND</h2>
+            <div id="titlecontent">
+                <h1>THE TREND</h1>
+            </div>
+            <div id="Advertisement">
+                <h3>free shipping and return<i class="fas fa-exclamation-circle"></i></h3>
+            </div>
+        </div>
+        <div class="categ1"><button class="btn btn-primary prev" onclick="prev()">Prev</button>
+            <div class="fash">
+                <p style="font-size:50px;"> Anime and Manga </p>
+            </div> <button class="btn btn-primary ious" onclick="prev()">Prev</button><button
+                class="btn btn-primary next" onclick="next()">Next</button>
+        </div>
+        <div class="items">
+            <div class="row">
+                <div class="sell">
+                    <img src=" https://animecast.net/wp-content/uploads/2021/04/namenserver-758x1348.png"
+                        class="img-fluid left" alt="item1">
+                    <div class="label" style="margin-right: 12%; margin-top: 25%;">
+                        <p>Moriarty the <br> Patriot Poster</p>
+                        <p>Php 20.00</p>
+                        <button class="btn btn-primary" onclick="patriot()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="http://ukiyaseed.weebly.com/uploads/5/8/8/7/58878313/7683637_orig.jpg"
+                        class="img-fluid right" id="class" alt="item2" style="margin-top: 10%;">
+                    <div class="label-r1">
+                        <p>Assassination <br> Classroom Poster</p>
+                        <p>Php 15.00</p>
+                        <button class="btn btn-primary" onclick="classroom()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sell">
+                    <img src="https://i.pinimg.com/originals/e8/06/df/e806dfbd2df98640d64ec652f35961ca.jpg"
+                        class="img-fluid left" alt="item1">
+                    <div class="label" style="margin-right: 10%; margin-top: 6%;">
+                        <p id="rak">Rak Wraithraiser <br> Plushie<br> (Tower of God)</p>
+                        <p>Php 150.00</p>
+                        <button class="btn btn-primary" onclick="plushie()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://preview.redd.it/issx973k44n81.jpg?width=640&crop=smart&auto=webp&s=e27973d4268ff23f664bf230a06e355b99631043"
+                        class="img-fluid right" alt="item2">
+                    <div class="label-r2">
+                        <p>Anya Forger <br> Figurine</p>
+                        <p>Php 200.00</p>
+                        <button class="btn btn-primary" onclick="figurine()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sell">
+                    <img src="https://i.ebayimg.com/images/g/44QAAOSwEAthTyEJ/s-l400.jpg" class="img-fluid left"
+                        alt="item1">
+                    <div class="label" style="margin-right: 8%; margin-top: 10%;">
+                        <p id="tokrev">Tokyo Revengers <br> Manga Volumes 1-24</p>
+                        <p>Php 250.00 each</p>
+                        <button class="btn btn-primary" onclick="manga()">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="sell">
+                    <img src="https://preview.redd.it/tmp5llw33i061.jpg?auto=webp&s=51c184f91cb2b0315a4a3d0d96e00a695d54ec2e"
+                        class="img-fluid right" alt="item2" id="stone">
+                    <div class="label-r3">
+                        <p id="manga">Dr. Stone Manga <br> Volumes 1-18</p>
+                        <p>Php 250.00 each</p>
+                        <button class="btn btn-primary" onclick="stone()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form id="former" action="http://sirjm.infinityfreeapp.com/checkout.php" method="get">
+            <h4>Check Out</h4>
+            <div class="my-3">
+                <label for="txtName" class="form-label">Name</label>
+                <input id="txtName" class="form-control" name="cust_name" type="text" placeholder="e.g. John Smith">
+            </div>
+            <div class="my-3">
+                <label for="txtEmail" class="form-label">Email</label>
+
+                <input id="txtEmail" class="form-control" name="cust_email" type="email"
+                    placeholder="e.g. jsmith@example.com">
+            </div>
+            <div class="my-3">
+                <label for="txtAddress" class="form-label">Address</label>
+                <input id="txtAddress" class="form-control" name="cust_addr" type="text"
+                    placeholder="e.g. Lily Hill, Mabalacat, Pampanga">
+            </div>
+
+            <div class="my-3 form-label">
+                <input id="carlos" class="form-control" name="cust_order" type="text">
+            </div>
+            <input type="submit" value="Check Out" onclick="saveCart()" class="btn btn-primary">
+        </form>
+        <h5>My Cart</h5>
+        <hr>
+        <div id="timeline">
+
+        </div>
+    </div>
+
+    <script>
+        var cust_order = [];
+        var d = 0;
+        var m = "";
+
+        if (localStorage.getItem('cust_order') == null) {
+
+        } else {
+            var cust_orderJSON = localStorage.getItem('cust_order');
+            cust_order = JSON.parse(cust_orderJSON);
+        }
+
+
+        function displayCart() {
+            document.getElementById('timeline').innerHTML = "";
+            for (var i = 0; i < cust_order.length; i++) {
+                document.getElementById('timeline').innerHTML += '<div class="post"><h5>' + cust_order[i].prod_name + '</h5><button class="btn btn-sm btn-outline-danger" onclick="removeAt(' + i + ')">Delete</button></div>';
+            }
+        }
+        displayCart();
+
+        function addCart() {
+            var p = { prod_name: m, prod_price: d };
+            cust_order.push(p);
+            displayCart();
+            saveCart();
+        }
+
+        function removeAt(i) {
+            cust_order.splice(i, 1);
+
+
+            displayCart();
+            localStorage.setItem('cust_order', JSON.stringify(cust_order));
+        }
+
+        function saveCart() {
+            localStorage.setItem('cust_order', JSON.stringify(cust_order));
+            if (localStorage.getItem('cust_order') == '[]') {
+                document.getElementById('carlos').value = "";
+            } else {
+                document.getElementById('carlos').value = JSON.stringify(cust_order);
+            }
+
+        }
+
+        function patriot() {
+            m = "Moriarty the Patriot Poster";
+            d = 20;
+            addCart();
+        }
+
+        function classroom() {
+            m = "Assassination Classroom Poster";
+            d = 15;
+            addCart();
+        }
+
+        function plushie() {
+            m = "Rak Wraithraiser Plushie (Tower of God)";
+            d = 150;
+            addCart();
+        }
+
+        function figurine() {
+            m = "Anya Forger Figurine";
+            d = 200;
+            addCart();
+        }
+
+        function manga() {
+            m = "Tokyo Revengers Manga Volumes 1-24";
+            d = 250;
+            addCart();
+        }
+
+        function stone() {
+            m = "Dr. Stone Manga Volumes 1-18";
+            d = 250;
+            addCart();
+        }
+
+        function prev() {
+            window.location.assign("kpop.html")
+        }
+
+        function next() {
+            window.location.assign("fashion.html")
+        }
+
+        function home() {
+            window.location.assign("index.html")
+        }
+
+        function comp() {
+            window.location.assign("Company-page.html")
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
