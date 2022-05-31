@@ -868,7 +868,7 @@
             <div class="my-3 form-label">
                 <input id="carlos" class="form-control" name="cust_order" type="text">
             </div>
-            <input type="submit" value="Check Out" onclick="saveCart()" class="btn btn-primary">
+            <input type="submit" value="Check Out" onclick="submitCart()" class="btn btn-primary">
         </form>
         <h5>My Cart</h5>
         <hr>
@@ -917,6 +917,14 @@
             cust_order.splice(i, 1);
             localStorage.setItem('cust_order', JSON.stringify(cust_order));
             displayCart();
+
+        }
+        
+         function submitCart() {
+            for (var i = 0; i < cust_order.length; i++) {
+                cust_order.splice(i);
+            }
+            localStorage.setItem('cust_order', JSON.stringify(cust_order));
 
         }
 
